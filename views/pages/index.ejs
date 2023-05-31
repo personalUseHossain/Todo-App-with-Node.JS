@@ -1,0 +1,23 @@
+<%- include('./header')%>
+
+<nav class="navbar"><p>TODO APP</p></nav>
+<div class="container">
+  <form action="/" method="POST">
+    <input id="search" name="todo" type="text" placeholder="Enter TODO" />
+    <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i></button>
+  </form>
+  <div class="item-container">
+    <ol>
+      <% todo.forEach(todos =>{%>
+      <li><%= todos.todo %></li>
+      <div class="btns">
+        <a href="/delete/<%= todos._id %>">
+          <button id="delate-btn"><i class="fa-solid fa-xmark"></i></button>
+        </a>
+      </div>
+      <% }) %>
+    </ol>
+  </div>
+</div>
+
+<%- include('./footer')%>

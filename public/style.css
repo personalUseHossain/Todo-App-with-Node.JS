@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.navbar{
+    font-size: 30px;
+    padding: 1rem;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-top: 5rem;
+    height: 100vh;
+}
+form{
+    display: flex;
+    gap: 5px;
+}
+.item-container{
+    display: flex;
+    gap: 2rem;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+form input:not(:nth-child(2)){
+    width: 70vw;
+    padding: 10px;
+}
+#add-btn{
+    padding: 10px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+.item-container li{
+    font-size: 30px;
+    width: 30vw;
+}
+.item-container button{
+    padding: 10px;
+}
+.btns{
+    margin: 1rem 0;
+}
+.item-container #edit-btn{
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+.item-container #delate-btn{
+    background-color: red;
+    border: 1px solid black;
+}
